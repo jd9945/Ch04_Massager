@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">舒筋按摩器</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title">sddsdfd</string>
+    <string name="ok">确认</string>
+    <string name="setnum">设置号码</string>
+    <string name="exit">退出</string>
+</resources>

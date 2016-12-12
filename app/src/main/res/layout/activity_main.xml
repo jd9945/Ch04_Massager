@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView android:text="按住文字即会震动" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:id="@+id/txv"
+        android:textIsSelectable="false" />
+
+    <Button
+        android:text="openBLE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="43dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="37dp"
+        android:id="@+id/openBle"
+        android:onClick="openBleDevice" />
+
+    <Button
+        android:text="close ble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/openBle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="65dp"
+        android:layout_marginEnd="65dp"
+        android:id="@+id/closeBLE"
+        android:onClick="closeBleDevice" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:id="@+id/scanDevice"
+        android:onClick="scanDevice"
+        android:layout_below="@+id/openBle"
+        android:layout_alignLeft="@+id/openBle"
+        android:layout_alignStart="@+id/openBle" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txv"
+        android:layout_alignRight="@+id/scanDevice"
+        android:layout_alignEnd="@+id/scanDevice"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="39dp"
+        android:id="@+id/connectDevice"
+        android:onClick="ConnectDeviceFun" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="54dp"
+        android:id="@+id/rxData"
+        android:layout_below="@+id/connectDevice"
+        android:layout_toLeftOf="@+id/closeBLE"
+        android:layout_toStartOf="@+id/closeBLE"
+        tools:text="rx:" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/connectDevice"
+        android:layout_alignRight="@+id/txv"
+        android:layout_alignEnd="@+id/txv"
+        android:layout_marginTop="26dp"
+        android:id="@+id/button2"
+        android:onClick="dialogPop"/>
+
+</RelativeLayout>
